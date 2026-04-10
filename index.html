@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trip | 中国旅行攻略</title>
+    <meta
+      name="description"
+      content="Trip 旅行攻略网站，精选中国 10 大热门景点，提供交通、门票、路线、美食、住宿和预算等实用出行信息。"
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body data-page="home">
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">Trip</span>
+        <span class="brand-copy">中国旅行攻略</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="切换导航">菜单</button>
+      <nav class="site-nav">
+        <a href="index.html" class="active">首页</a>
+        <a href="spots.html">热门景点</a>
+        <a href="#guides">攻略专题</a>
+        <a href="#about">关于我们</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Domestic Travel Guide</p>
+          <h1>把中国热门目的地攻略，整理成真正能出发的计划</h1>
+          <p class="hero-text">
+            聚焦中国 10 大热门景点，用清晰页面呈现最佳季节、门票、交通、游玩路线、预算和避坑提醒。
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="spots.html">查看热门景点</a>
+            <a class="button button-secondary" href="#guides">浏览攻略专题</a>
+          </div>
+          <ul class="hero-stats">
+            <li><strong>10</strong><span>热门景点</span></li>
+            <li><strong>30+</strong><span>路线建议</span></li>
+            <li><strong>100+</strong><span>实用出行提示</span></li>
+          </ul>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-card">
+            <span>热门路线</span>
+            <strong>北京故宫 + 长城 + 西安兵马俑</strong>
+            <p>历史文化线，适合第一次国内深度游。</p>
+          </div>
+          <div class="hero-card alt">
+            <span>自然风光线</span>
+            <strong>黄山 + 九寨沟 + 张家界</strong>
+            <p>山岳峡谷和高海拔景观，适合摄影和徒步人群。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-surface">
+        <div class="section-heading">
+          <p class="eyebrow">Popular Destinations</p>
+          <h2>10 大热门景点</h2>
+          <a href="spots.html" class="text-link">查看全部</a>
+        </div>
+        <div class="spot-grid" id="featured-spots"></div>
+      </section>
+
+      <section class="section categories">
+        <div class="section-heading">
+          <p class="eyebrow">Browse By Category</p>
+          <h2>按出行偏好查找目的地</h2>
+        </div>
+        <div class="category-grid">
+          <article>
+            <h3>历史文化</h3>
+            <p>故宫、长城、兵马俑、布达拉宫，适合喜欢建筑与历史叙事的用户。</p>
+          </article>
+          <article>
+            <h3>山岳自然</h3>
+            <p>黄山、张家界、九寨沟，以地貌与徒步体验为核心。</p>
+          </article>
+          <article>
+            <h3>湖海度假</h3>
+            <p>西湖、亚龙湾、漓江，适合慢旅行、亲子游和摄影。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-surface" id="guides">
+        <div class="section-heading">
+          <p class="eyebrow">Editorial Picks</p>
+          <h2>攻略专题</h2>
+        </div>
+        <div class="guide-grid">
+          <article class="guide-card">
+            <h3>第一次去北京怎么玩</h3>
+            <p>把故宫、长城和市区中轴线串起来，节奏更合理，避开无效折返。</p>
+          </article>
+          <article class="guide-card">
+            <h3>旺季出游避坑清单</h3>
+            <p>预约、排队、天气、错峰时段和酒店地段，是热门景点最容易出问题的地方。</p>
+          </article>
+          <article class="guide-card">
+            <h3>预算型旅行如何选住宿</h3>
+            <p>核心原则不是最便宜，而是离换乘点近、早晚出行稳定、周边餐饮成熟。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section tips-band">
+        <div>
+          <p class="eyebrow">Trip Planning</p>
+          <h2>出发前先看这三件事</h2>
+        </div>
+        <div class="tips-list">
+          <article>
+            <h3>先看季节</h3>
+            <p>同一个景点在淡旺季的体验差异很大，尤其是高海拔地区和热门历史景区。</p>
+          </article>
+          <article>
+            <h3>再看交通</h3>
+            <p>跨城交通决定行程效率，市内交通决定体力消耗，二者都要提前规划。</p>
+          </article>
+          <article>
+            <h3>最后看预算</h3>
+            <p>门票、接驳、住宿和餐饮是主要成本，提前做区间预算更稳妥。</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="about">
+      <div>
+        <h3>Trip</h3>
+        <p>一个专注中国热门目的地的旅行攻略网站。</p>
+      </div>
+      <div>
+        <h3>内容方向</h3>
+        <p>景点攻略、路线规划、预算建议、出行常识。</p>
+      </div>
+      <div>
+        <h3>当前版本</h3>
+        <p>静态演示版，适合作为后续 React / Next.js 项目的内容原型。</p>
+      </div>
+    </footer>
+
+    <script src="assets/data.js"></script>
+    <script src="assets/site.js"></script>
+  </body>
+</html>

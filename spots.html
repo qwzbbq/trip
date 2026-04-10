@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>热门景点 | Trip</title>
+    <meta
+      name="description"
+      content="浏览中国 10 大热门景点，支持按地区、景点类型和旅行季节进行筛选。"
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body data-page="list">
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">Trip</span>
+        <span class="brand-copy">中国旅行攻略</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="切换导航">菜单</button>
+      <nav class="site-nav">
+        <a href="index.html">首页</a>
+        <a href="spots.html" class="active">热门景点</a>
+        <a href="index.html#guides">攻略专题</a>
+        <a href="index.html#about">关于我们</a>
+      </nav>
+    </header>
+
+    <main class="list-layout">
+      <section class="page-banner">
+        <p class="eyebrow">Travel Directory</p>
+        <h1>热门景点总览</h1>
+        <p>按地区、类型和适合季节筛选，快速进入单个景点的完整攻略页面。</p>
+      </section>
+
+      <section class="filters">
+        <label>
+          <span>搜索景点</span>
+          <input id="search-input" type="search" placeholder="输入景点名称或城市" />
+        </label>
+        <label>
+          <span>地区</span>
+          <select id="region-filter"></select>
+        </label>
+        <label>
+          <span>类型</span>
+          <select id="category-filter"></select>
+        </label>
+        <label>
+          <span>季节</span>
+          <select id="season-filter"></select>
+        </label>
+      </section>
+
+      <section>
+        <div class="results-bar">
+          <p id="results-count"></p>
+          <a href="index.html" class="text-link">返回首页</a>
+        </div>
+        <div class="spot-grid" id="list-spots"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <h3>Trip</h3>
+        <p>热门景点浏览页</p>
+      </div>
+      <div>
+        <h3>筛选维度</h3>
+        <p>地区、类型、季节、关键字。</p>
+      </div>
+      <div>
+        <h3>下一步</h3>
+        <p>点击任意景点卡片进入详细攻略页。</p>
+      </div>
+    </footer>
+
+    <script src="assets/data.js"></script>
+    <script src="assets/site.js"></script>
+  </body>
+</html>
